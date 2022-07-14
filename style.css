@@ -122,3 +122,66 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+:root {
+	--main-color: #3ba55d;
+	--dark: #202225;
+	--medium: #2f3136;
+	--light: #36393f;
+    --font: font-family: 'Roboto', sans-serif;
+}
+
+.grid-container {
+	height: 100vh;
+	display: grid;
+	grid-template-columns: minmax(250px, 1fr) 4fr;
+	grid-template-rows: 225px 1fr;
+}
+
+.sidebar {
+	grid-column: 1 / 2;
+	grid-row: 1 / 3;
+	background-color: var(--dark);
+	color: white;
+}
+
+.dashboard-logo {
+    font-family: 'Roboto', sans-serif;
+	font-size: 2rem;
+	display: flex;
+	align-items: center;
+	margin-top: 25px;
+	margin-bottom: 60px;
+	margin-left: 20px;
+}
+
+.dashboard-logo img {
+	height: 50px;
+	margin-right: 15px;
+}
+
+.sidebar-item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	margin-bottom: 35px;
+	margin-left: 20px;
+}
+
+.sidebar-item img {
+	height: 30px;
+	margin-right: 25px;
+}
+
+.topbar {
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
+	background-color: var(--medium);
+}
+
+.projects {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+	background-color: var(--light);
+}
